@@ -58,7 +58,7 @@ export default function ContactPage() {
         <p className="text-stone-400 text-lg mb-8">
           Thanks for reaching out. We&apos;ll get back to you soon.
           <br />
-          <span className="text-xs text-stone-600 mt-2 block">[DEMO] This is a portfolio demonstration — no real message was sent.</span>
+          <span className="text-xs text-stone-500 mt-2 block">[DEMO] This is a portfolio demonstration — no real message was sent.</span>
         </p>
         <Link
           href="/"

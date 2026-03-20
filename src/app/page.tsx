@@ -52,7 +52,7 @@ export default function HomePage() {
       {/* ── The Collection ──────────────────────────────────────────────── */}
       <section id="collection" className="max-w-6xl mx-auto px-6 pb-28">
         <div className="text-center mb-14">
-          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500 mb-3">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-400 mb-3">
             The Collection
           </h2>
           <p className="text-3xl sm:text-4xl font-bold text-amber-50">
@@ -71,7 +71,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500 mb-3">
+              <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-400 mb-3">
                 Our Story
               </h2>
               <p className="text-3xl sm:text-4xl font-bold text-amber-50 mb-6">
@@ -113,7 +113,7 @@ export default function HomePage() {
       {/* ── The Craft ──────────────────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-6 py-24">
         <div className="text-center mb-14">
-          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500 mb-3">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-400 mb-3">
             The Craft
           </h2>
           <p className="text-3xl sm:text-4xl font-bold text-amber-50">

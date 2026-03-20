@@ -45,7 +45,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
         </div>
 
         {/* Details */}
-        <div className="flex items-center gap-4 text-xs text-stone-500 mb-5">
+        <div className="flex items-center gap-4 text-xs text-stone-400 mb-5">
           <span>{product.weight}</span>
           <span className="w-1 h-1 rounded-full bg-stone-700" />
           <span>{product.burnTime} burn time</span>

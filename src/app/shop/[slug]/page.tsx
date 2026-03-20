@@ -45,7 +45,7 @@ export default function ProductPage({
     <div className="max-w-6xl mx-auto px-6 py-16">
       <Link
         href="/#collection"
-        className="inline-flex items-center gap-2 text-sm text-stone-400 hover:text-amber-200 transition-colors mb-10"
+        className="inline-flex items-center gap-2 text-sm text-stone-400 underline decoration-stone-600 hover:text-amber-200 hover:decoration-amber-400 transition-colors mb-10"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -70,7 +70,7 @@ export default function ProductPage({
 
         {/* Product info */}
         <div>
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-stone-500 mb-2 block">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-stone-400 mb-2 block">
             Lume Candle Co.
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold text-amber-50 mb-3">
@@ -101,19 +101,19 @@ export default function ProductPage({
           {/* Details */}
           <div className="grid grid-cols-2 gap-4 mb-8 text-sm">
             <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800/50">
-              <p className="text-stone-500 mb-1">Weight</p>
+              <p className="text-stone-400 mb-1">Weight</p>
               <p className="text-stone-200 font-medium">{product.weight}</p>
             </div>
             <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800/50">
-              <p className="text-stone-500 mb-1">Burn Time</p>
+              <p className="text-stone-400 mb-1">Burn Time</p>
               <p className="text-stone-200 font-medium">{product.burnTime}</p>
             </div>
             <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800/50">
-              <p className="text-stone-500 mb-1">Wax</p>
+              <p className="text-stone-400 mb-1">Wax</p>
               <p className="text-stone-200 font-medium">100% Natural Soy</p>
             </div>
             <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800/50">
-              <p className="text-stone-500 mb-1">Wick</p>
+              <p className="text-stone-400 mb-1">Wick</p>
               <p className="text-stone-200 font-medium">Cotton-Core</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function ProductPage({
             {state === "loading" ? "Redirecting to checkout…" : `Buy Now — ${formatPrice(product.priceCents)}`}
           </button>
 
-          <p className="text-xs text-stone-500 mt-3 flex items-center gap-1.5">
+          <p className="text-xs text-stone-400 mt-3 flex items-center gap-1.5">
             <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
             </svg>

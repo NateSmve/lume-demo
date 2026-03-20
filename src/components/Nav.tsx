@@ -34,7 +34,7 @@ export default function Nav() {
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 pathname === link.href
                   ? "bg-stone-800 text-amber-100"
-                  : "text-stone-400 hover:text-amber-100 hover:bg-stone-800/50"
+                  : "text-stone-300 hover:text-amber-100 hover:bg-stone-800/50"
               }`}
             >
               {link.label}
