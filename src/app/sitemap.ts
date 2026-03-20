@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { products } from "@/lib/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lume-demo.up.railway.app";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lume-ecommerce-demo-new.up.railway.app";
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [

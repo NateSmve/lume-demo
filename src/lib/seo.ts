@@ -8,7 +8,7 @@ interface SeoOptions {
   noIndex?: boolean;
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lume-demo.up.railway.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lume-ecommerce-demo-new.up.railway.app";
 const siteName = "Lume";
 const defaultImage = "/og-image.png";
 

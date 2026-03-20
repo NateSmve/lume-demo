@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
   const origin =
     req.headers.get("origin") ||
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://lume-demo.up.railway.app";
+    "https://lume-ecommerce-demo-new.up.railway.app";
 
   try {
     const session = await getStripe().checkout.sessions.create({
@@ -48,10 +48,12 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ url: session.url });
-  } catch (err) {
-    console.error("Stripe checkout error:", err);
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : "Unknown error";
+    console.error("Stripe checkout error:", message, err);
     return NextResponse.json(
-      { error: "Failed to create checkout session." },
+      { error: "Failed to create checkout session.", detail: message },
       { status: 500 }
     );
   }
