@@ -14,12 +14,6 @@ export function getStripe(): Stripe {
   return _stripe;
 }
 
-export const stripe = new Proxy({} as Stripe, {
-  get(_, prop) {
-    return (getStripe() as Record<string | symbol, unknown>)[prop];
-  },
-});
-
 /**
  * Create a Stripe Checkout session for a one-time deposit payment.
  *
@@ -45,7 +39,7 @@ export async function createDepositSession({
   successUrl: string;
   cancelUrl: string;
 }) {
-  return stripe.checkout.sessions.create({
+  return getStripe().checkout.sessions.create({
     payment_method_types: ["card"],
     mode: "payment",
     line_items: [{ price: priceId, quantity: 1 }],
@@ -70,7 +64,7 @@ export async function createSubscriptionSession({
   successUrl: string;
   cancelUrl: string;
 }) {
-  return stripe.checkout.sessions.create({
+  return getStripe().checkout.sessions.create({
     payment_method_types: ["card"],
     mode: "subscription",
     line_items: [{ price: priceId, quantity: 1 }],
